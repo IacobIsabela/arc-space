@@ -1,0 +1,182 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: rgb(22, 11, 11)  no-repeat fixed center;	/* background-color:pink; */
+}
+
+
+
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(201, 157, 238);
+	color: white;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	height: 85px;
+
+}
+
+ 
+.imgLogo {
+	cursor: pointer;
+	margin-left: 30%;
+
+}
+
+
+.logo:hover {
+	opacity: 0.75;
+	color: pink;
+
+}
+
+.navbar-links ul {
+	margin-right: 100px;
+	padding: 0;
+	display: flex;
+}
+
+.navbar-links li {
+	list-style: none;
+
+}
+
+.navbar-links li a {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	padding: 1rem;
+	display: block;
+	transition: color .4s;
+	-webkit-transition:  color .4s;
+}
+
+.navbar-links li a:hover {
+	color: pink;
+}
+
+.toggle-button {
+	position: absolute;
+	top: .75rem;
+	right: 1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+
+.toggle-button .bars {
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+}
+/* responsibe media query start */
+@media (max-width: 600px) {
+	.toggle-button {
+		display: flex;
+	}
+
+	.navbar-links {
+		display: none;
+		width: 100%;
+	}
+
+	.navbar {
+		flex-direction: column;
+		/*align-items: flex-start;*/
+	}
+
+	.navbar-links ul {
+		margin: 0;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.list-item:hover {
+		background-color: pink;
+	}
+
+	.list-item:after {
+		background: transparent !important;
+	}
+
+	.list-item:hover:after {
+		background: transparent !important;
+	}
+
+	.navbar-links li {
+		text-align: center;
+	}
+
+	.navbar-links li a {
+		padding: .5rem 1rem;
+	}
+
+	.navbar-links.active {
+		display: flex;
+	}
+
+
+}
+
+@media (max-width: 1104px) {
+	.home .max-width{
+
+		margin-left: 0px;
+
+	}
+}
+
+
+
+@media (max-width: 991px) {
+	 .max-width{
+
+		padding: 0 50px;
+	}
+}
+
+
+.list-item {
+	position: relative;
+}
+
+
+.list-item:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2.5px;
+	display: block;
+	margin-top: 5px;
+	right: 0;
+	/* background:  pink; */
+	transition: width .4s ease;
+	-webkit-transition:  width .4s ease;
+
+}
+
+.list-item:hover:after {
+	width: 100%;
+	left:  0;
+	background: pink;
+}
+
+iframe {
+    margin-top: 120px;
+    
+}
+
+

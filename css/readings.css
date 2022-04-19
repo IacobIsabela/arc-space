@@ -1,0 +1,210 @@
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+    margin:0;
+    padding:0;
+}
+
+body {
+	margin: 0;
+	padding:0;
+	background: rgb(22, 11, 11)  no-repeat fixed center;	/* background-color:pink; */
+	overflow-x: hidden;
+    margin-top: 0; padding-top: 0; margin-bottom: 0; padding-bottom: 0;
+}
+
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(201, 157, 238);
+	color: white;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	height: 85px;
+    margin-top: 0px;
+}
+
+ 
+.imgLogo {
+	cursor: pointer;
+	margin-left: 30%;
+	width: 110px;
+	height: 110px;
+
+}
+
+
+.logo:hover {
+	opacity: 0.75;
+	color: white;
+
+}
+
+.navbar-links ul {
+	margin-right: 100px;
+	padding: 0;
+	display: flex;
+}
+
+.navbar-links li {
+	list-style: none;
+
+}
+
+.navbar-links li a {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	padding: 1rem;
+	display: block;
+	transition: color .4s;
+	-webkit-transition:  color .4s;
+}
+
+.navbar-links li a:hover {
+	color: rgb(237, 206, 247);
+}
+
+.toggle-button {
+	position: absolute;
+	top: .75rem;
+	right: 1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+
+.toggle-button .bars {
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+
+
+.info{
+    margin: auto;
+    position: absolute;
+	width: 300px;
+	height: 200px;
+	z-index: 15;
+	top: 50%;
+	left: 50%;
+	margin: -100px 0 0 -150px;
+	color:#fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.info h1 {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid rgb(201, 157, 238); /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+    typing 2s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+footer{
+	background:black; 
+	opacity:0.6;
+	height:auto; 
+	width:100vw; 
+	font-family: "Open Sans";
+	padding-top:30px;
+	color:#fff; 
+	box-shadow: black;
+    bottom: 0;
+    position: fixed;
+
+	 
+}
+
+.footer-content{
+	display:flex;
+	align-items: center; 
+	justify-content: center; 
+	flex-direction: column;
+	text-align: center; 
+	 
+
+}
+
+.footer-content h3{
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+
+
+}
+
+.footer-content p{
+	 max-width: 500px;
+	 margin: 10px auto; 
+	 line-height: 28px;
+	 font-size: 14px;
+
+}
+
+.socials{
+	list-style: none;
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	margin: 1rem 0 rem 3 rem 0; 
+
+}
+
+.socials li{
+	margin: 0 10px; 
+
+}
+
+.socials a{
+	text-decoration: none;
+	color: #fff; 
+
+}
+
+.socials a i{
+	font-size: 1.1rem; 
+	transition: color .4s ease; 
+
+
+}
+
+.socials a:hover i {
+	color: rgb(201, 157, 238); 
+}
+
+.footer-bottom{
+	text-align: center;
+    
+
+}
+
+/* The typing effect */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: rgb(201, 157, 238); }
+  }
+
+
+
