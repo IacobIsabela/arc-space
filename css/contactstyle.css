@@ -3,12 +3,14 @@
 	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 body {
 	margin: 0;
 	padding: 0;
 	background: rgb(22, 11, 11)  no-repeat fixed center;	/* background-color:pink; */
+	overflow-x: hidden;
 }
 
 
