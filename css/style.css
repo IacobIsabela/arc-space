@@ -8,6 +8,8 @@
 
 html {
 	overflow-x: hidden;
+	touch-action: none;
+	-ms-touch-action: none;
 }
 
 body {
@@ -15,6 +17,8 @@ body {
 	padding: 0;
 	background: rgb(22, 11, 11)  no-repeat fixed center;	/* background-color:pink; */
 	overflow-x: hidden;
+	touch-action: none;
+	-ms-touch-action: none;
 }
 
 .navbar {
