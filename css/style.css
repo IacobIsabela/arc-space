@@ -27,7 +27,7 @@ body {
 }
 
  
-.imgLogo {
+.navbar .logo img {
 	cursor: pointer;
 	margin-left: 30%;
 	width: 110px;
@@ -91,13 +91,22 @@ body {
 	}
 
 	.navbar-links {
+		margin: 0;
 		display: none;
 		width: 100%;
+		background-color: rgb(201, 157, 238);
 	}
 
 	.navbar {
 		flex-direction: column;
 		/*align-items: flex-start;*/
+	}
+
+	.navbar .logo img {
+		margin: auto;
+		width: 81px;
+		height: 81px;
+		
 	}
 
 	.navbar-links ul {
@@ -130,6 +139,10 @@ body {
 		display: flex;
 	}
 
+	.about .about-img {
+		margin: auto;
+	}
+
 
 }
 
@@ -138,15 +151,6 @@ body {
 
 		margin-left: 0px;
 
-	}
-}
-
-
-
-@media (max-width: 991px) {
-	 .max-width{
-
-		padding: 0 50px;
 	}
 }
 
@@ -181,7 +185,6 @@ body {
 
 .home { 
 	display:flex;
-	background: url("pexels-andreea-ch-1166644.jpg");
 	height: 100vh; 
 	background-size:cover;
     background-position: center;
@@ -295,10 +298,6 @@ margin-left: 140px;
 
 @media (max-width: 500px) {
 
-	.max-width{
-		padding: 0 23px;
-	}
-
 	.home .home-content .text-2{
 		font-size: 32px;
 	}
@@ -358,6 +357,7 @@ border: 2px solid rgb(201, 157, 238);
 
 .about .about-img {
 	margin-left: 50px;
+	width: 550px;
 }
 
 .max-width {
@@ -370,13 +370,15 @@ border: 2px solid rgb(201, 157, 238);
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: space-between;
-} */
+	width: 100%;
+} 
 
  .about .about-content .left{
 
 	width: 45%;
 
 }
+
 
 .about .about-content .right{
 
@@ -391,7 +393,7 @@ border: 2px solid rgb(201, 157, 238);
 	border-style: solid;
 	border-color: rgb(201, 157, 238);
 	padding: 30px;
-	width: 90%;
+	width: 100%;
 	background-color: rgba(0, 0, 0, 0.61);
 	backdrop-filter: blur(5px);
 	
@@ -431,7 +433,7 @@ text-align: justify;
 	border: 2px solid #b1d1fc;
 	transition: all 0.3 ease; 
 
-	} 
+	}
 
 
 .color{
@@ -440,11 +442,37 @@ text-align: justify;
 	
 } 
 
+@media (max-width: 1200px) {
+	.about .about-img {
+		width: 450px;
+	}
+}
+
+@media (max-width: 1104px) {
+	.about .about-content {
+		display: block;
+	}
+
+	.about .about-img {
+		margin: 0 auto;
+	}
+
+	.about .left {
+		margin: 0 auto;
+	}
+
+	.about .right {
+		margin: 0 auto;
+	}
+}
+
+
+
 footer{
 	background:black; 
 	opacity:0.6;
 	height:auto; 
-	width:100vw; 
+	width:100%; 
 	font-family: "Open Sans";
 	padding-top:30px;
 	color:#fff; 
