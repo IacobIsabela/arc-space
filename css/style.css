@@ -341,7 +341,7 @@ margin-left: 140px;
 
 @media (max-width: 540px) {
 	#arcspace {
-		font-size: 35px;
+		font-size: 32px;
 	}
 
 	.home {
@@ -351,7 +351,7 @@ margin-left: 140px;
 
 @media (max-width: 400px) {
 	#arcspace {
-		font-size: 28px;
+		font-size: 25px;
 	}
 }
 	
