@@ -219,18 +219,12 @@ margin: auto 0 auto 40px ;
 	font-size: 40px;
 	font-weight: 600; 
 	margin-left: -3px;
+	display: flex;
+	justify-content: center;
 
 	
 }
 
-.home .home-content .text-2 span { 
-
-	color: rgb(201, 157, 238);
-	font-weight: 500;
-	text-decoration: underline;
-	
-	
-}
 
 .home .home-content a{
 
@@ -247,6 +241,32 @@ margin: auto 0 auto 40px ;
 
 
 }
+
+#arcspace {
+	font-family: 'Waiting for the Sunrise', cursive; 
+  	font-size:50px;
+	color: rgb(201, 157, 238);
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .05em solid rgb(201, 157, 238); /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+    typing 2s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: rgb(201, 157, 238); }
+  }
 
 
 .home .home-content .text-3 { 
@@ -306,6 +326,19 @@ margin-left: 140px;
 		font-size: 32px;
 	}
 }
+
+@media (max-width: 540px) {
+	#arcspace {
+		font-size: 35px;
+	}
+}
+
+@media (max-width: 400px) {
+	#arcspace {
+		font-size: 30px;
+	}
+}
+	
 
 .home .home-content a:hover{
 
@@ -450,7 +483,7 @@ text-align: justify;
 	}
 
 	.about .about-img {
-		margin: 0 auto;
+		margin: 20px auto;
 	}
 
 	.about .left {
@@ -459,8 +492,12 @@ text-align: justify;
 	}
 
 	.about .right {
-		margin: 0 auto;
+		margin: 20px auto;
 		width: 90%!important;
+	}
+
+	.about .sub-title {
+		margin-bottom: 30px;
 	}
 }
 
