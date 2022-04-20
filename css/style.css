@@ -324,6 +324,7 @@ border: 2px solid rgb(201, 157, 238);
 
 .about{
 	font-family: 'Poppins', sans-serif;
+	width: 100%;
 	 
 	
 }
@@ -501,7 +502,7 @@ footer{
 }
 
 .footer-content p{
-	 max-width: 500px;
+	 max-width: 50%;
 	 margin: 10px auto; 
 	 line-height: 28px;
 	 font-size: 14px;
