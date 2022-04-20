@@ -358,7 +358,7 @@ border: 2px solid rgb(201, 157, 238);
 
 .about .about-img {
 	margin-left: 50px;
-	width: 550px;
+	width: 90%;
 }
 
 .max-width {
@@ -443,11 +443,6 @@ text-align: justify;
 	
 } 
 
-@media (max-width: 1200px) {
-	.about .about-img {
-		width: 450px;
-	}
-}
 
 @media (max-width: 1104px) {
 	.about .about-content {
@@ -460,10 +455,12 @@ text-align: justify;
 
 	.about .left {
 		margin: 0 auto;
+		width: 90%!important;
 	}
 
 	.about .right {
 		margin: 0 auto;
+		width: 90%!important;
 	}
 }
 
