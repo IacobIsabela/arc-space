@@ -15,6 +15,7 @@ body {
 	padding: 0;
 	background: rgb(22, 11, 11)  no-repeat fixed center;	/* background-color:pink; */
 	overflow-x: hidden;
+
 }
 
 .navbar {
@@ -228,9 +229,6 @@ margin: auto 0 auto 40px ;
 	font-weight: 600; 
 	margin-left: -3px;
 	display: flex;
-	justify-content: center;
-
-	
 }
 
 
@@ -257,7 +255,7 @@ margin: auto 0 auto 40px ;
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
 	border-right: .05em solid rgb(201, 157, 238); /* The typwriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
-	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	margin: 0 auto 0 0; /* Gives that scrolling effect as the typing happens */
 	letter-spacing: .15em; /* Adjust as needed */
 	animation: 
     typing 2s steps(40, end),
@@ -267,7 +265,7 @@ margin: auto 0 auto 40px ;
 /* The typing effect */
 @keyframes typing {
 	from { width: 0 }
-	to { width: 100% }
+	to { width: 59% }
   }
   
   /* The typewriter cursor effect */
