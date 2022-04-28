@@ -486,6 +486,19 @@ text-align: justify;
 	
 } 
 
+.text-1{
+	color:rgb(201, 157, 238);
+	
+}
+.text-3{
+
+	color:rgb(201, 157, 238);
+}
+
+.text-3 span{
+	color:rgb(201, 157, 238);
+
+}
 
 @media (max-width: 1104px) {
 	.about .about-content {
