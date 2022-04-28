@@ -283,11 +283,8 @@ footer{
 
 
 .about .about-img {
-	margin-left: 50px;
-}
-
-.about .about-img img {
 	width: 450px;
+	margin-left:25px;
 }
 
 .max-width {
@@ -361,8 +358,25 @@ text-align: justify;
 	border: 2px solid #b1d1fc;
 	transition: all 0.3 ease; 
 
-	} 
+	}
 
+@media(max-width:1120px) {
+	.about .about-img {
+		width: 400px;
+	}
+}
+
+@media(max-width:950px) {
+	.about .about-img {
+		width: 350px;
+	}
+}
+
+@media(max-width:840px) {
+	.about .about-img {
+		width: 300px;
+	}
+}
 
 .color{
 	color: rgb(201, 157, 238);
