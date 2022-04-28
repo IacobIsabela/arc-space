@@ -212,6 +212,10 @@ footer{
 	margin-left: 50px;
 }
 
+.about .about-img img {
+	width: 450px;
+}
+
 .max-width {
 	width: 100%;
 }
