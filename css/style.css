@@ -213,7 +213,7 @@ body {
 }
 .home .max-width {
 
-margin: auto 0 auto 40px ;	
+margin: auto; ;	
 
 }
 
@@ -253,19 +253,18 @@ margin: auto 0 auto 40px ;
   	font-size:50px;
 	color: rgb(201, 157, 238);
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	border-right: .05em solid rgb(201, 157, 238); /* The typwriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto 0 0; /* Gives that scrolling effect as the typing happens */
 	letter-spacing: .15em; /* Adjust as needed */
 	animation: 
-    typing 2s steps(50, end),
-    blink-caret .75s step-end infinite;
+    typing 2s steps(50, end)
+    /* blink-caret .75s step-end infinite; */
 }
 
 /* The typing effect */
 @keyframes typing {
 	from { width: 0 }
-	to { width: 77% }
+	to { width: 87% }
   }
   
   /* The typewriter cursor effect */
@@ -284,6 +283,7 @@ margin: auto 0 auto 40px ;
 
 .home .home-content .column-left {
 	width: 55%;
+	margin-left: 40px;
 }
 
 .home .home-content .column-right {
@@ -340,6 +340,10 @@ margin: auto 0 auto 40px ;
 		text-align: left!important;
 	}
 
+	.home .home-content .column-right .newsletter {
+		width: 100%;
+	}
+
 	.home .home-content .column-left {
 		width: 100%;
 	}
@@ -369,7 +373,8 @@ margin: auto 0 auto 40px ;
 	}
 
 	.home .home-content .column-left {
-		margin-bottom:	 20px;
+		margin-bottom: 20px;
+		margin-left: 20px;
 	}
 
 	.about .title {
@@ -462,10 +467,6 @@ margin: auto 0 auto 40px ;
 @media(max-width:300px) {
 	.home .max-width {
 		margin: auto;
-	}
-
-	.home .home-content{
-		margin-left: 20px;
 	}
 }
 	
