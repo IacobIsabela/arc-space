@@ -194,7 +194,7 @@ body {
 
 .home { 
 	display:flex;
-	height: 100vh; 
+	height: 100%; 
 	background-size:cover;
     background-position: center;
 	background-attachment: fixed;
@@ -232,7 +232,7 @@ margin: auto 0 auto 40px ;
 }
 
 
-.home .home-content a{
+.home .home-content .learn{
 
 	display: inline-flex; 
 	background-color:rgb(201, 157, 238);
@@ -258,20 +258,20 @@ margin: auto 0 auto 40px ;
 	margin: 0 auto 0 0; /* Gives that scrolling effect as the typing happens */
 	letter-spacing: .15em; /* Adjust as needed */
 	animation: 
-    typing 2s steps(40, end),
+    typing 2s steps(50, end),
     blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
 	from { width: 0 }
-	to { width: 59% }
+	to { width: 77% }
   }
   
   /* The typewriter cursor effect */
   @keyframes blink-caret {
 	from, to { border-color: transparent }
-	50% { border-color: rgb(201, 157, 238); }
+	45% { border-color: rgb(201, 157, 238); }
   }
 
 
@@ -282,18 +282,124 @@ margin: auto 0 auto 40px ;
 
 }
 
-.column-right .home-img{
+.home .home-content .column-left {
+	width: 55%;
+}
 
-object-fit: fill;
-width: auto;
-height: auto;
-margin-left: 140px;
+.home .home-content .column-right {
+	text-align: center;
+	width: 45%;
+}
 
+.home .home-content .newsletter {
+
+	position: relative;
+	text-align: center;
+}
+
+.home .home-content .newsletter div{
+	font-size: 50px;
+	color: rgb(201, 157, 238);
+	font-family: 'Waiting for the Sunrise', cursive;
+	text-decoration: none;
+	position: absolute;
+ 	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	text-shadow: 
+        -3px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 
+        -1px -1px black, 1px 1px black, -1px 1px black, 1px -1px black;
+}
+
+.home .home-content .newsletter img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+@media(max-width:960px) {
+
+	.home .home-content .column-right {
+		width: 35%;
+	}
+	.home .home-content .column-left {
+		width: 65%;
+		margin-bottom: 20px;
+	}
 
 }
 
+@media(max-width:860px) {
+	.home .home-content {
+		display: block;
+	}
 
+	.home .home-content .column-right {
+		display: block;
+		margin: auto;
+		width: 100%;
+		text-align: left!important;
+	}
 
+	.home .home-content .column-left {
+		width: 100%;
+	}
+
+	.home .home-content .column-right img {
+		width: 50%!important;
+		height: 50%!important;
+	}
+
+	.about .title {
+		margin-top: 120px;
+	}
+
+}
+
+@media(max-width:690px) {
+	.home .home-content .column-right img {
+		width: 60%!important;
+		height: 60%!important;
+	}
+}
+
+@media(max-width:550px) {
+	.home .home-content .column-right img {
+		width: 70%!important;
+		height: 70%!important;
+	}
+
+	.home .home-content .column-left {
+		margin-bottom:	 20px;
+	}
+
+	.about .title {
+		margin-top:0;
+	}
+}
+
+.rotate {
+
+	transform: rotate(-30deg)!important;
+  
+  
+	/* Legacy vendor prefixes that you probably don't need... */
+  
+	/* Safari */
+	-webkit-transform: rotate(-30deg);
+  
+	/* Firefox */
+	-moz-transform: rotate(-30deg);
+  
+	/* IE */
+	-ms-transform: rotate(-30deg);
+  
+	/* Opera */
+	-o-transform: rotate(-30deg);
+  
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  
+  }
 
 
 @media (max-width:690) {
@@ -331,15 +437,15 @@ margin-left: 140px;
 	.home .home-content .text-3{
 		font-size: 32px;
 	}
+
+	.home .home-content .learn{
+		padding: 8px 30px;
+	}
 }
 
 @media (max-width: 540px) {
 	#arcspace {
 		font-size: 32px;
-	}
-
-	.home {
-		margin-right: 12px;
 	}
 }
 
@@ -347,10 +453,24 @@ margin-left: 140px;
 	#arcspace {
 		font-size: 25px;
 	}
+
+	.home .home-content .learn{
+		padding: 6px 26px;
+	}
+}
+
+@media(max-width:300px) {
+	.home .max-width {
+		margin: auto;
+	}
+
+	.home .home-content{
+		margin-left: 20px;
+	}
 }
 	
 
-.home .home-content a:hover{
+.home .home-content .learn:hover{
 
  
 background: rgb(223, 196, 245);
@@ -601,6 +721,8 @@ footer{
 	text-align: center;
 
 }
+
+
 
 
 
